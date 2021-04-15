@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,16 +11,18 @@ namespace Testes
         static void Main(string[] args)
         {
 
-	    // desafio 2290
+            // desafio 2290
+
             int quant, i, a;
             int? n1, n2;
-
+            while (true)
+            {
 
                 quant = int.Parse(Console.ReadLine());
 
                 if (quant == 0)
                 {
-
+                    break;
                 }
                 else
                 {
@@ -35,14 +37,14 @@ namespace Testes
                         a = int.Parse(vet[i]);
                         entrada.Add(a);
 
-                        if (i == 3 && quant == 4)
+                        if (quant == 4)
                         {
                             entrada.Add(null);
                             entrada.Add(null);
                             entrada.Add(null);
                             entrada.Add(null);
                         }
-                        else if (i == 5 && quant == 6)
+                        else if (quant == 6)
                         {
                             entrada.Add(null);
                             entrada.Add(null);
@@ -70,12 +72,13 @@ namespace Testes
                             {
                                 n1 = solteiros[0];
                                 n2 = solteiros[1];
-                                Console.WriteLine(n1 + " " +n2);
+                                Console.WriteLine(n1 + " " + n2);
                             }
                         }
                     }
                     Console.ReadKey();
                 }
+            }
 
         }
     }
