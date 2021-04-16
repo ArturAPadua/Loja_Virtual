@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,11 +13,10 @@ namespace Testes
 
             // desafio 2290
 
-            int quant, i, a;
-            int? n1, n2;
+            int quant, i, a, n1, n2;
+
             while (true)
             {
-
                 quant = int.Parse(Console.ReadLine());
 
                 if (quant == 0)
@@ -26,9 +25,9 @@ namespace Testes
                 }
                 else
                 {
-                    List<int?> entrada = new List<int?>();
+                    List<int> entrada = new List<int>();
 
-                    List<int?> solteiros = new List<int?>();
+                    List<int> solteiros = new List<int>();
 
                     string[] vet = Console.ReadLine().Split(' ');
 
@@ -36,19 +35,6 @@ namespace Testes
                     {
                         a = int.Parse(vet[i]);
                         entrada.Add(a);
-
-                        if (quant == 4)
-                        {
-                            entrada.Add(null);
-                            entrada.Add(null);
-                            entrada.Add(null);
-                            entrada.Add(null);
-                        }
-                        else if (quant == 6)
-                        {
-                            entrada.Add(null);
-                            entrada.Add(null);
-                        }
                     }
 
                     var group = entrada.GroupBy(b => b).Select(e => new
