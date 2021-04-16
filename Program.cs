@@ -12,7 +12,7 @@ namespace Testes
         {
 
             // desafio 2290
-            // answer: Closed
+            // answer: Wrong answer (0%)
 
             int quant, i, a, n1, n2;
 
