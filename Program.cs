@@ -13,8 +13,7 @@ namespace Testes
 
             // desafio 2290
 
-            int quant, i, a;
-            int? n1, n2;
+            int quant, i, a, n1, n2;
             while (true)
             {
 
