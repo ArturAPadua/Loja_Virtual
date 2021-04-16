@@ -11,10 +11,7 @@ namespace Testes
         static void Main(string[] args)
         {
 
-            // desafio 2290
-            // answer: Wrong answer (0%)
-
-            int quant, i, a, n1, n2;
+            int quant, i, a;
 
             while (true)
             {
@@ -44,29 +41,23 @@ namespace Testes
                         Contagem = e.Count()
                     });
 
-
                     foreach (var g in group)
                     {
-                        if (g.Contagem % 2 == 0)
-                        {
-
-                        }
-                        else
+                        if (g.Contagem % 2 != 0)
                         {
                             solteiros.Add(g.Numero);
 
                             if (solteiros.Count() == 2)
                             {
-                                n1 = solteiros[0];
-                                n2 = solteiros[1];
-                                Console.WriteLine(n1 + " " + n2);
+                                Console.WriteLine(solteiros[0] + " " + solteiros[1]);
                             }
                         }
                     }
-                    Console.ReadKey();
+
                 }
             }
 
+            Console.ReadKey();
         }
     }
 }
